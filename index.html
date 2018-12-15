@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>final-app</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script src="/dist/build.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>final-app</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCwFphLLY-gnoHqJjPNdqP4JNO4njqK4gs",
+      authDomain: "pwair-final.firebaseapp.com",
+      databaseURL: "https://pwair-final.firebaseio.com",
+      projectId: "pwair-final",
+      storageBucket: "pwair-final.appspot.com",
+      messagingSenderId: "952583299130"
+    };
+    firebase.initializeApp(config);
+
+  </script>
+  <script src="/dist/build.js"></script>
+</body>
+
 </html>
